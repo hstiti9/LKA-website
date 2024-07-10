@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(225, 225, 225);
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25vh;
+}
+
+div {
+    margin: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+textarea{
+    min-height: 150px;
+}
+
+input[type="submit"], button {
+    background-color: rgb(150, 50, 50);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #a03030;
+}
+
+
+.desc {
+    height: 150px;
+}
+
+a {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border: solid 2px white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.control button {
+    color: rgb(150, 50, 50);
+    width: 20%;
+    height: 100%;
+    margin: 10px;
+    font-weight: 700;
+    border: 3px solid rgb(150, 50, 50);
+    background-color: transparent;
+    font-size: 30px;
+    font-family: 'Poppins';
+    padding: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.control button:hover {
+    background-color: #ffff;
+    transform: scale(1.05);
+}
+
+#result {
+    max-width: 95vw;
+    margin-top: 20px;
+}
+.management-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.management-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.application-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.application-table th, .application-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.application-table th {
+    background-color: #0099ff;
+    color: white;
+}
+
+.application-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.application-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+button.accept, button.reject {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.accept {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 5px;
+}
+
+button.accept:hover {
+    background-color: #45a049;
+}
+
+button.reject {
+    background-color: #f44336;
+    color: white;
+}
+
+button.reject:hover {
+    background-color: #e53935;
+}
+
+button.accept {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+button.accept:hover {
+    background-color: #45a049;
+}
+
+button.reject {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.reject:hover {
+    background-color: #e53935;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(220, 220, 255);
+    border: 1px solid rgb(50, 50, 150);
+    color: rgb(50, 50, 150);
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+#back {
+    padding-top: 25px;
+    padding-left: 10px;
+    width: 100%;
+    margin: 0;
+    display: block;
+}
